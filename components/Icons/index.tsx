@@ -11,6 +11,9 @@ import iconLightMode from './icon-light-mode.png';
 import iconVector from './icon-vector.png';
 import iconLogo from './icon-logo.png';
 import iconEBook from './icon-ebook.png';
+import iconViewSummary from './icon-view-summary.png'
+import iconRiverFlow from './icon-river-flow.png';
+import iconCart from './icon-cart.png';
 
 const IconWrapper = ({ src, size }: { src: any; size: number }) => (
   <Image src={src} alt="icon" width={size} height={size} />
@@ -45,5 +48,14 @@ export const IconLogo = (props: { size: number }) => (
 );
 export const IconEBook = (props: { size: number }) => (
   <IconWrapper src={iconEBook} {...props} />
+);
+export const IconViewSummary = (props: { size: number }) => (
+  <IconWrapper src={iconViewSummary} {...props} />
+);
+export const IconRiverFlow = (props: { size: number }) => (
+  <IconWrapper src={iconRiverFlow} {...props} />
+);
+export const IconCart = (props: { size: number }) => (
+  <IconWrapper src={iconCart} {...props} />
 );
 
