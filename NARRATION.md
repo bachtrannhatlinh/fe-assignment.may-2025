@@ -18,4 +18,22 @@
   - [ ] Allow sorting and change sorting order by clicking the table header.
   - [ ] Allow filter by each columns values.
   - [ ] The current page & active filter must be saved to the state store and persist across page refreshes
+ __________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+Hi, technical leader,
 
+I'm Linh, a candidate for the test Junior Front-End Engineer Assignment—May 2025.
+
+I'd a question that :
+
+- At screen 3 , I see it is a new screen independence compared to screens 1 & 2. 
+
+Because , at screens 1 & 2 , I'd build a common layout. So , continue building the screen 3, then I think it is not reasonable.
+
+Solution: I think that it should be new repositories that have a new layout. 
+
+Or, if you give me a new solution
+
+Thanks for your watching.
+
+LinhBTN
