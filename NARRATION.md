@@ -28,12 +28,13 @@ I'd a question that :
 
 - At screen 3 , I see it is a new screen independence compared to screens 1 & 2. 
 
-Because , at screens 1 & 2 , I'd build a common layout. So , continue building the screen 3, then I think it is not reasonable.
+Because , at screens 1 & 2 , I'd build a common layout. So , continue building the screen 3, then I think it is not reasonable. I also update code to review the background screen.
 
 Solution: I think that it should be new repositories that have a new layout. 
 
 Or, if you give me a new solution
 
 Thanks for your watching.
+
 
 LinhBTN
