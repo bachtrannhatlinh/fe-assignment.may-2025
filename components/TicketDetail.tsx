@@ -17,7 +17,7 @@ export default function TicketDetail() {
         </div>
         <></>
       </Header>
-      <div className="flex">
+      <div className="flex h-screen overflow-hidden">
         {/* Main Content */}
         <div className="flex-1 border-r border-solid border-[#D3D3D3] pr-4">
           {/* Description */}

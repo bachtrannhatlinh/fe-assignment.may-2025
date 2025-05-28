@@ -22,20 +22,22 @@ export default function Sidebar() {
   return (
     <aside
       className={`bg-[#f5f6f7] py-4 flex flex-col h-full border-r transition-all duration-300 ${
-        isOpen ? "w-16 px-0 items-center" : "w-56 px-4"
+        isOpen ? "w-16 px-0 items-center" : "w-56"
       }`}
     >
       {/* Logo & user */}
-      <div className={`flex items-center justify-center mb-6 ${isOpen ? "" : "gap-2"}`}>
+      <div className={`flex px-4 mb-6 ${isOpen ? "" : "gap-2"}`}>
         <IconLogo size={50} />
         {!isOpen && (
           <div>
-            <div className="font-bold text-base text-[#1a3e6b]">ABC Company</div>
+            <div className="font-bold text-base text-[#1a3e6b]">
+              ABC Company
+            </div>
             <div className="text-xs text-[#3b82f6]">Lisa Rose</div>
           </div>
         )}
       </div>
-      <div className="flex-1 flex flex-col justify-between w-full">
+      <div className="flex-1 flex flex-col justify-between w-full px-4">
         <div>
           <nav className="flex flex-col gap-1">
             <SidebarItem
@@ -52,12 +54,12 @@ export default function Sidebar() {
               icon1={<IconEstimator size={18} />}
               label="Estimator"
               isOpen={isOpen}
-              active
             />
             <SidebarItem
               icon1={<IconProjects size={18} />}
               label="Projects"
               isOpen={isOpen}
+              active
             />
           </nav>
         </div>
@@ -107,12 +109,13 @@ function SidebarItem({
     <div
       className={`flex items-center transition-all cursor-pointer
         ${isOpen ? "justify-center py-3 px-0" : "gap-5 px-4 py-2"}
-        rounded-r-lg
-        ${active
-          ? isOpen
-            ? "bg-[#e5f0fa] border-l-4 border-[#005B86] text-[#005B86] font-bold"
-            : "bg-[#e5f0fa] text-[#005B86] font-bold"
-          : isOpen
+        rounded-sm
+        ${
+          active
+            ? isOpen
+              ? "bg-[#e5f0fa] border-l-4 border-[#005B86] text-[#005B86] font-bold"
+              : "bg-[#D3D3D3] text-[#005B86] font-bold"
+            : isOpen
             ? "hover:bg-[#e5e7eb] text-[#6b7280]"
             : "text-[#6b7280] hover:bg-[#e5e7eb]"
         }
