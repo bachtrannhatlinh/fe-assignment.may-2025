@@ -1,6 +1,6 @@
 import React, { ComponentProps } from "react";
 
-const IconBars = (props: ComponentProps<"svg">) => {
+const IconChevronRight = (props: ComponentProps<'svg'>) => {
   return (
     <>
       <svg
@@ -14,11 +14,11 @@ const IconBars = (props: ComponentProps<"svg">) => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
         />
       </svg>
     </>
   );
 };
 
-export default IconBars;
+export default IconChevronRight;

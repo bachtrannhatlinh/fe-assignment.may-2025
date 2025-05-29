@@ -14,6 +14,11 @@ import iconEBook from './icon-ebook.png';
 import iconViewSummary from './icon-view-summary.png'
 import iconRiverFlow from './icon-river-flow.png';
 import iconCart from './icon-cart.png';
+import iconGeneralInformation from './icon-general-information.png';
+import iconPercent from './icon-percent.png';
+import iconDocument from './icon-document.png';
+import iconLoadDocument from './icon-load-document.png';
+import iconChartLineUp from './icon-chart-line-up.png';
 
 const IconWrapper = ({ src, size }: { src: any; size: number }) => (
   <Image src={src} alt="icon" width={size} height={size} />
@@ -57,5 +62,20 @@ export const IconRiverFlow = (props: { size: number }) => (
 );
 export const IconCart = (props: { size: number }) => (
   <IconWrapper src={iconCart} {...props} />
+);
+export const IconGeneralInformation = (props: { size: number }) => (
+  <IconWrapper src={iconGeneralInformation} {...props} />
+);
+export const IconPercent = (props: { size: number }) => (
+  <IconWrapper src={iconPercent} {...props} />
+);
+export const IconDocument = (props: { size: number }) => (
+  <IconWrapper src={iconDocument} {...props} />
+);
+export const IconLoadDocument = (props: { size: number }) => (
+  <IconWrapper src={iconLoadDocument} {...props} />
+);
+export const IconChartLineUp = (props: { size: number }) => (
+  <IconWrapper src={iconChartLineUp} {...props} />
 );
 

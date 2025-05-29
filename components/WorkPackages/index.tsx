@@ -2,7 +2,7 @@ import { IWorkPackage } from "@/types/work-packages";
 import React from "react";
 import { Button } from "../ui/button";
 import { IconCart } from "../Icons";
-import ChevronRight from "../Icons/chevron-right";
+import ChevronRight from "../Icons/icon-chevron-right";
 
 const WorkPackages = ({ workPackages }: { workPackages: IWorkPackage[] }) => {
   return (

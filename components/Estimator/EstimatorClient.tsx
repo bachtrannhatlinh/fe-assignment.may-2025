@@ -11,6 +11,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/store";
 import { toggleSidebar } from "@/store/summarySlice";
 import IconBars from "../Icons/icon-bars";
+import ArrowRight from "../Icons/icon-arrow-right";
 
 export default function EstimatorClient() {
   const isOpen = useSelector((state: RootState) => state.summary.open);
@@ -21,7 +22,7 @@ export default function EstimatorClient() {
       <Header
         right={
           <Button
-            variant={isOpen ? 'lightBlue50_005B86' : "gray_F3F4F6"} 
+            variant={isOpen ? "lightBlue50_005B86" : "gray_F3F4F6"}
             onClick={() => dispatch(toggleSidebar())}
           >
             View Summary
@@ -62,7 +63,7 @@ export default function EstimatorClient() {
                 href="#"
                 className="flex items-center gap-1 text-xs text-[#005B86]"
               >
-                <IconBars className="w-5 h-5 text-[#005B86]"/>
+                <IconBars className="w-5 h-5 text-[#005B86]" />
                 How to add custom WPs
               </a>
             </div>
@@ -75,9 +76,9 @@ export default function EstimatorClient() {
             <div className="flex justify-end mt-8">
               <Button
                 variant="outline"
-                className="rounded-full px-6 py-2 flex items-center gap-2"
+                className="text-[#005B86] border-[#005B86] hover:text-[#005B86] rounded-md px-6 py-2 flex items-center gap-2"
               >
-                Next <ChevronRight className="w-4 h-4" />
+                Next <ArrowRight className="w-4 h-4 text-[#005B86]" />
               </Button>
             </div>
           </main>
@@ -85,4 +86,4 @@ export default function EstimatorClient() {
       </div>
     </>
   );
-} 
+}

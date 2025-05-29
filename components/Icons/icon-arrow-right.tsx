@@ -1,8 +1,8 @@
 import React, { ComponentProps } from "react";
 
-const ChevronRight = (props: ComponentProps<'svg'>) => {
+const ArrowRight = (props: ComponentProps<"svg">) => {
   return (
-    <div>
+    <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -14,11 +14,11 @@ const ChevronRight = (props: ComponentProps<'svg'>) => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
         />
       </svg>
-    </div>
+    </>
   );
 };
 
-export default ChevronRight;
+export default ArrowRight;
