@@ -33,66 +33,71 @@ const SelectBox = ({ addressData }: SelectBoxProps) => {
   const output = city && ward && street ? `${street}, ${ward}, ${city}` : "";
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-      {/* Select Tỉnh/Thành phố */}
-      <Select
-        value={city}
-        onValueChange={(value) => dispatch(setCity(value))}
-      >
-        <SelectTrigger className="w-[220px]">
-          <SelectValue placeholder="Chọn Tỉnh / Thành phố" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup>
-            <SelectLabel>Tỉnh / Thành phố</SelectLabel>
-            {Object.keys(addressData).map((city) => (
-              <SelectItem key={city} value={city}>
-                {city}
-              </SelectItem>
-            ))}
-          </SelectGroup>
-        </SelectContent>
-      </Select>
-
-      {/* Select Phường/Xã */}
-      <Select
-        value={ward}
-        onValueChange={(value) => dispatch(setWard(value))}
-        disabled={!city}
-      >
-        <SelectTrigger className="w-[220px]">
-          <SelectValue placeholder="Chọn Phường / Xã" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup>
-            <SelectLabel>Phường / Xã</SelectLabel>
-            {city &&
-              addressData[city]?.map((ward) => (
-                <SelectItem key={ward} value={ward}>
-                  {ward}
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-50 to-blue-100">
+      <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md flex flex-col gap-6">
+        <h2 className="text-2xl font-bold text-sky-700 text-center mb-2">Chọn địa chỉ</h2>
+        {/* Select Tỉnh/Thành phố */}
+        <Select
+          value={city}
+          onValueChange={(value) => dispatch(setCity(value))}
+        >
+          <SelectTrigger className="w-full h-12 rounded-lg border-gray-300 focus:ring-2 focus:ring-sky-400">
+            <SelectValue placeholder="Chọn Tỉnh / Thành phố" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Tỉnh / Thành phố</SelectLabel>
+              {Object.keys(addressData).map((city) => (
+                <SelectItem key={city} value={city}>
+                  {city}
                 </SelectItem>
               ))}
-          </SelectGroup>
-        </SelectContent>
-      </Select>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
 
-      {/* Input Đường và số nhà */}
-      <input
-        className="border rounded px-2 py-1 w-[220px]"
-        placeholder="Đường và số nhà"
-        value={street}
-        onChange={(e) => dispatch(setStreet(e.target.value))}
-        disabled={!city || !ward}
-      />
+        {/* Select Phường/Xã */}
+        <Select
+          value={ward}
+          onValueChange={(value) => dispatch(setWard(value))}
+          disabled={!city}
+        >
+          <SelectTrigger className="w-full h-12 rounded-lg border-gray-300 focus:ring-2 focus:ring-sky-400 disabled:bg-gray-100">
+            <SelectValue placeholder="Chọn Phường / Xã" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Phường / Xã</SelectLabel>
+              {city &&
+                addressData[city]?.map((ward) => (
+                  <SelectItem key={ward} value={ward}>
+                    {ward}
+                  </SelectItem>
+                ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
 
-      <InputField value={output} className="w-[250px]" />
-      <Button
-        className="mt-2 w-[100px] bg-red-500 hover:bg-red-600 text-white"
-        onClick={() => dispatch(resetAddress())}
-        type="button"
-      >
-        Reset
-      </Button>
+        {/* Input Đường và số nhà */}
+        <input
+          className="border border-gray-300 rounded-lg px-3 py-3 w-full text-base focus:outline-none focus:ring-2 focus:ring-sky-400 disabled:bg-gray-100"
+          placeholder="Đường và số nhà"
+          value={street}
+          onChange={(e) => dispatch(setStreet(e.target.value))}
+          disabled={!city || !ward}
+        />
+
+        {/* Hiển thị kết quả */}
+        <InputField value={output} className="w-full text-center text-sky-700 font-semibold bg-sky-50 border-0" />
+
+        <Button
+          className="mt-2 w-full h-11 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold rounded-lg shadow"
+          onClick={() => dispatch(resetAddress())}
+          type="button"
+        >
+          Reset
+        </Button>
+      </div>
     </div>
   );
 };

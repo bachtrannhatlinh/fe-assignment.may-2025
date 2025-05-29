@@ -17,7 +17,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 export default function Sidebar() {
-  const isOpen = useSelector((state: RootState) => state.summary.open);
+  const isOpen = useSelector((state: RootState) => state.toggle.open);
 
   return (
     <aside

@@ -4,17 +4,17 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ChevronRight } from "lucide-react";
-import { categories, workPackages } from "@/app/(dashboard)/estimator/helper";
 import Categories from "@/components/Categories";
 import WorkPackages from "@/components/WorkPackages";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/store";
-import { toggleSidebar } from "@/store/summarySlice";
 import IconBars from "../Icons/icon-bars";
 import ArrowRight from "../Icons/icon-arrow-right";
+import { toggleSidebar } from "@/store/toggleSlice";
+import { categories, workPackages } from "@/app/(layout-implementation)/estimator/helper";
 
 export default function EstimatorClient() {
-  const isOpen = useSelector((state: RootState) => state.summary.open);
+  const isOpen = useSelector((state: RootState) => state.toggle.open);
   const dispatch = useDispatch();
 
   return (

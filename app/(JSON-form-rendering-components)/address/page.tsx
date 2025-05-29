@@ -1,5 +1,7 @@
+"use client";
+
 import SelectBox from "@/components/SelectBox"
-import { addressDataJson } from "@/jsons/json"
+import { addressDataJson } from "@/jsons/address-data"
 
 const Page = () => {
   return (

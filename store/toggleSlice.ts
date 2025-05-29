@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const summarySlice = createSlice({
-  name: "summary",
+const toggleSlice = createSlice({
+  name: "toggle",
   initialState: {
     open: false,
   },
@@ -12,5 +12,5 @@ const summarySlice = createSlice({
   },
 });
 
-export const { toggleSidebar } = summarySlice.actions;
-export default summarySlice.reducer;
+export const { toggleSidebar } = toggleSlice.actions;
+export default toggleSlice.reducer;

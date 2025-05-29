@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import summaryReducer from "./summarySlice";
+import toggleReducer from "./toggleSlice";
 import addressReducer from "./addressSlice";
 import {
   persistStore,
@@ -14,7 +14,7 @@ import {
 import storage from "redux-persist/lib/storage"; // sử dụng localStorage
 
 const rootReducer = combineReducers({
-  summary: summaryReducer,
+  toggle: toggleReducer,
   address: addressReducer,
 });
 
