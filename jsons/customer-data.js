@@ -1,6 +1,6 @@
 export const customerData = [
   {
-    Index: 1,
+    id: 1,
     CustomerId: "C001",
     FirstName: "John",
     LastName: "Doe",
@@ -14,7 +14,7 @@ export const customerData = [
     Website: "https://abc.com"
   },
   {
-    Index: 2,
+    id: 2,
     CustomerId: "C002",
     FirstName: "Jane",
     LastName: "Smith",
@@ -28,7 +28,7 @@ export const customerData = [
     Website: "https://xyz.vn"
   },
   {
-    Index: 3,
+    id: 3,
     CustomerId: "C003",
     FirstName: "Minh",
     LastName: "Nguyen",
@@ -42,7 +42,7 @@ export const customerData = [
     Website: "https://minhtech.com"
   },
   {
-    Index: 4,
+    id: 4,
     CustomerId: "C004",
     FirstName: "Linh",
     LastName: "Tran",
@@ -56,7 +56,7 @@ export const customerData = [
     Website: "https://linhsolutions.vn"
   },
   {
-    Index: 5,
+    id: 5,
     CustomerId: "C005",
     FirstName: "David",
     LastName: "Pham",
@@ -70,7 +70,7 @@ export const customerData = [
     Website: "https://dptech.com"
   },
   {
-    Index: 6,
+    id: 6,
     CustomerId: "C006",
     FirstName: "Mai",
     LastName: "Le",
@@ -84,7 +84,7 @@ export const customerData = [
     Website: "https://mailegroup.vn"
   },
   {
-    Index: 7,
+    id: 7,
     CustomerId: "C007",
     FirstName: "Huy",
     LastName: "Nguyen",
@@ -98,7 +98,7 @@ export const customerData = [
     Website: "https://huymedia.vn"
   },
   {
-    Index: 8,
+    id: 8,
     CustomerId: "C008",
     FirstName: "Quang",
     LastName: "Le",
@@ -112,7 +112,7 @@ export const customerData = [
     Website: "https://quangsoft.com"
   },
   {
-    Index: 9,
+    id: 9,
     CustomerId: "C009",
     FirstName: "Hoa",
     LastName: "Pham",
@@ -126,7 +126,7 @@ export const customerData = [
     Website: "https://hoadecor.vn"
   },
   {
-    Index: 10,
+    id: 10,
     CustomerId: "C010",
     FirstName: "Tuan",
     LastName: "Tran",
@@ -140,7 +140,7 @@ export const customerData = [
     Website: "https://tuanauto.vn"
   },
   {
-    Index: 11,
+    id: 11,
     CustomerId: "C011",
     FirstName: "Khanh",
     LastName: "Vo",
@@ -154,7 +154,7 @@ export const customerData = [
     Website: "https://khanhfoods.vn"
   },
   {
-    Index: 12,
+    id: 12,
     CustomerId: "C012",
     FirstName: "Phuc",
     LastName: "Nguyen",
@@ -168,7 +168,7 @@ export const customerData = [
     Website: "https://phuctravel.vn"
   },
   {
-    Index: 13,
+    id: 13,
     CustomerId: "C013",
     FirstName: "Son",
     LastName: "Le",
@@ -182,7 +182,7 @@ export const customerData = [
     Website: "https://sonmobile.vn"
   },
   {
-    Index: 14,
+    id: 14,
     CustomerId: "C014",
     FirstName: "Lan",
     LastName: "Pham",
@@ -196,7 +196,7 @@ export const customerData = [
     Website: "https://lanspa.vn"
   },
   {
-    Index: 15,
+    id: 15,
     CustomerId: "C015",
     FirstName: "Hung",
     LastName: "Tran",
@@ -210,7 +210,7 @@ export const customerData = [
     Website: "https://hungtech.vn"
   },
   {
-    Index: 16,
+    id: 16,
     CustomerId: "C016",
     FirstName: "Thu",
     LastName: "Nguyen",
@@ -224,7 +224,7 @@ export const customerData = [
     Website: "https://thudesign.vn"
   },
   {
-    Index: 17,
+    id: 17,
     CustomerId: "C017",
     FirstName: "Duc",
     LastName: "Pham",
@@ -238,7 +238,7 @@ export const customerData = [
     Website: "https://ducauto.vn"
   },
   {
-    Index: 18,
+    id: 18,
     CustomerId: "C018",
     FirstName: "Hanh",
     LastName: "Le",
@@ -252,7 +252,7 @@ export const customerData = [
     Website: "https://hanhfoods.vn"
   },
   {
-    Index: 19,
+    id: 19,
     CustomerId: "C019",
     FirstName: "Bao",
     LastName: "Nguyen",
@@ -266,7 +266,7 @@ export const customerData = [
     Website: "https://baodecor.vn"
   },
   {
-    Index: 20,
+    id: 20,
     CustomerId: "C020",
     FirstName: "Tam",
     LastName: "Tran",
@@ -280,7 +280,7 @@ export const customerData = [
     Website: "https://tamtravel.vn"
   },
   {
-    Index: 21,
+    id: 21,
     CustomerId: "C021",
     FirstName: "Vy",
     LastName: "Le",
@@ -294,7 +294,7 @@ export const customerData = [
     Website: "https://vyspa.vn"
   },
   {
-    Index: 22,
+    id: 22,
     CustomerId: "C022",
     FirstName: "Phat",
     LastName: "Nguyen",
@@ -308,7 +308,7 @@ export const customerData = [
     Website: "https://phatmobile.vn"
   },
   {
-    Index: 23,
+    id: 23,
     CustomerId: "C023",
     FirstName: "Kieu",
     LastName: "Pham",
@@ -322,7 +322,7 @@ export const customerData = [
     Website: "https://kieudesign.vn"
   },
   {
-    Index: 24,
+    id: 24,
     CustomerId: "C024",
     FirstName: "Tung",
     LastName: "Tran",
@@ -336,7 +336,7 @@ export const customerData = [
     Website: "https://tungauto.vn"
   },
   {
-    Index: 25,
+    id: 25,
     CustomerId: "C025",
     FirstName: "Dao",
     LastName: "Le",
@@ -350,7 +350,7 @@ export const customerData = [
     Website: "https://daofoods.vn"
   },
   {
-    Index: 26,
+    id: 26,
     CustomerId: "C026",
     FirstName: "Quyen",
     LastName: "Nguyen",
@@ -364,7 +364,7 @@ export const customerData = [
     Website: "https://quyendecor.vn"
   },
   {
-    Index: 27,
+    id: 27,
     CustomerId: "C027",
     FirstName: "Hieu",
     LastName: "Pham",
@@ -378,7 +378,7 @@ export const customerData = [
     Website: "https://hieutech.vn"
   },
   {
-    Index: 28,
+    id: 28,
     CustomerId: "C028",
     FirstName: "Trang",
     LastName: "Tran",
@@ -392,7 +392,7 @@ export const customerData = [
     Website: "https://trangspa.vn"
   },
   {
-    Index: 29,
+    id: 29,
     CustomerId: "C029",
     FirstName: "Nam",
     LastName: "Le",
@@ -406,7 +406,7 @@ export const customerData = [
     Website: "https://nammobile.vn"
   },
   {
-    Index: 30,
+    id: 30,
     CustomerId: "C030",
     FirstName: "Yen",
     LastName: "Nguyen",
@@ -420,7 +420,7 @@ export const customerData = [
     Website: "https://yenfoods.vn"
   },
   {
-    Index: 31,
+    id: 31,
     CustomerId: "C031",
     FirstName: "Phuong",
     LastName: "Pham",
@@ -434,7 +434,7 @@ export const customerData = [
     Website: "https://phuongdesign.vn"
   },
   {
-    Index: 32,
+    id: 32,
     CustomerId: "C032",
     FirstName: "Tiep",
     LastName: "Tran",
@@ -448,7 +448,7 @@ export const customerData = [
     Website: "https://tiepauto.vn"
   },
   {
-    Index: 33,
+    id: 33,
     CustomerId: "C033",
     FirstName: "Luan",
     LastName: "Le",
@@ -462,7 +462,7 @@ export const customerData = [
     Website: "https://luanfoods.vn"
   },
   {
-    Index: 34,
+    id: 34,
     CustomerId: "C034",
     FirstName: "Binh",
     LastName: "Nguyen",
@@ -476,7 +476,7 @@ export const customerData = [
     Website: "https://binhdecor.vn"
   },
   {
-    Index: 35,
+    id: 35,
     CustomerId: "C035",
     FirstName: "Tuyet",
     LastName: "Pham",
@@ -490,7 +490,7 @@ export const customerData = [
     Website: "https://tuyetspa.vn"
   },
   {
-    Index: 36,
+    id: 36,
     CustomerId: "C036",
     FirstName: "Viet",
     LastName: "Tran",
@@ -504,7 +504,7 @@ export const customerData = [
     Website: "https://viettech.vn"
   },
   {
-    Index: 37,
+    id: 37,
     CustomerId: "C037",
     FirstName: "Hao",
     LastName: "Le",
@@ -518,7 +518,7 @@ export const customerData = [
     Website: "https://haofoods.vn"
   },
   {
-    Index: 38,
+    id: 38,
     CustomerId: "C038",
     FirstName: "My",
     LastName: "Nguyen",
@@ -532,7 +532,7 @@ export const customerData = [
     Website: "https://mydecor.vn"
   },
   {
-    Index: 39,
+    id: 39,
     CustomerId: "C039",
     FirstName: "Hien",
     LastName: "Pham",
@@ -546,7 +546,7 @@ export const customerData = [
     Website: "https://hiendesign.vn"
   },
   {
-    Index: 40,
+    id: 40,
     CustomerId: "C040",
     FirstName: "Loi",
     LastName: "Tran",
@@ -560,7 +560,7 @@ export const customerData = [
     Website: "https://loiauto.vn"
   },
   {
-    Index: 41,
+    id: 41,
     CustomerId: "C041",
     FirstName: "Phuoc",
     LastName: "Le",
@@ -574,7 +574,7 @@ export const customerData = [
     Website: "https://phuocfoods.vn"
   },
   {
-    Index: 42,
+    id: 42,
     CustomerId: "C042",
     FirstName: "Loan",
     LastName: "Nguyen",
@@ -588,7 +588,7 @@ export const customerData = [
     Website: "https://loandecor.vn"
   },
   {
-    Index: 43,
+    id: 43,
     CustomerId: "C043",
     FirstName: "Nghia",
     LastName: "Pham",
@@ -602,7 +602,7 @@ export const customerData = [
     Website: "https://nghiatech.vn"
   },
   {
-    Index: 44,
+    id: 44,
     CustomerId: "C044",
     FirstName: "Thao",
     LastName: "Tran",
@@ -616,7 +616,7 @@ export const customerData = [
     Website: "https://thaospa.vn"
   },
   {
-    Index: 45,
+    id: 45,
     CustomerId: "C045",
     FirstName: "Hieu",
     LastName: "Le",
@@ -630,7 +630,7 @@ export const customerData = [
     Website: "https://hieufoods.vn"
   },
   {
-    Index: 46,
+    id: 46,
     CustomerId: "C046",
     FirstName: "Dung",
     LastName: "Nguyen",
@@ -644,7 +644,7 @@ export const customerData = [
     Website: "https://dungdecor.vn"
   },
   {
-    Index: 47,
+    id: 47,
     CustomerId: "C047",
     FirstName: "Tuan",
     LastName: "Pham",
@@ -658,7 +658,7 @@ export const customerData = [
     Website: "https://tuandesign.vn"
   },
   {
-    Index: 48,
+    id: 48,
     CustomerId: "C048",
     FirstName: "Linh",
     LastName: "Tran",
@@ -672,7 +672,7 @@ export const customerData = [
     Website: "https://linhauto.vn"
   },
   {
-    Index: 49,
+    id: 49,
     CustomerId: "C049",
     FirstName: "Quoc",
     LastName: "Le",
@@ -686,7 +686,7 @@ export const customerData = [
     Website: "https://quocfoods.vn"
   },
   {
-    Index: 50,
+    id: 50,
     CustomerId: "C050",
     FirstName: "Bao",
     LastName: "Nguyen",
