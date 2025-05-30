@@ -11,7 +11,7 @@ import { RootState } from "@/store";
 import IconBars from "../Icons/icon-bars";
 import ArrowRight from "../Icons/icon-arrow-right";
 import { toggleSidebar } from "@/store/toggleSlice";
-import { categories, workPackages } from "@/app/(layout-implementation)/estimator/helper";
+import { categories, workPackages } from "@/app/(task1 - layout)/estimator/helper";
 
 export default function EstimatorClient() {
   const isOpen = useSelector((state: RootState) => state.toggle.open);

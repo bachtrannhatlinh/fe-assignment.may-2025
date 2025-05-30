@@ -30,6 +30,10 @@ const SelectBox = ({ addressData }: SelectBoxProps) => {
   const dispatch = useDispatch();
   const { city, ward, street } = useSelector((state: RootState) => state.address);
 
+  console.log('Current city:', city);
+  console.log('Address data:', addressData);
+  console.log('Wards for city:', city ? addressData[city] : null);
+
   const output = city && ward && street ? `${street}, ${ward}, ${city}` : "";
 
   return (
@@ -68,12 +72,11 @@ const SelectBox = ({ addressData }: SelectBoxProps) => {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Phường / Xã</SelectLabel>
-              {city &&
-                addressData[city]?.map((ward) => (
-                  <SelectItem key={ward} value={ward}>
-                    {ward}
-                  </SelectItem>
-                ))}
+              {city && Array.isArray(addressData[city]) && addressData[city].map((ward) => (
+                <SelectItem key={ward} value={ward}>
+                  {ward}
+                </SelectItem>
+              ))}
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -88,7 +91,7 @@ const SelectBox = ({ addressData }: SelectBoxProps) => {
         />
 
         {/* Hiển thị kết quả */}
-        <InputField value={output} className="w-full text-center text-sky-700 font-semibold bg-sky-50 border-0" />
+        <InputField value={output} className="w-full text-center text-sky-700 font-semibold bg-sky-50 border-0" readOnly />
 
         <Button
           className="mt-2 w-full h-11 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold rounded-lg shadow"
