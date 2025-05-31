@@ -133,3 +133,24 @@ ul {
   background-color: #eaeaea;
   color: black;
 }
+
+.activity-list .activity-item {
+  position: relative;
+  padding-left: 12px;
+}
+
+.activity-list .activity-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 18px;
+  width: 2px;
+  height: 100%;
+  background: #d3d3d3;
+  z-index: 0;
+}
+
+.activity-item > span.w-3 {
+  position: relative;
+  z-index: 1;
+}

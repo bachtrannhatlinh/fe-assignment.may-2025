@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   Table,
   TableHeader,
@@ -58,9 +59,11 @@ const UserTableUM = () => (
               </TableCell>
               <TableCell>
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     src={user.avatar}
                     alt={user.name}
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full object-cover border"
                   />
                   <div>

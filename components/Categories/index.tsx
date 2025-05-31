@@ -3,7 +3,7 @@ import React from "react";
 
 const Categories = ({ categories }: { categories: ICategories[] }) => {
   return (
-    <ul className="text-sm">
+    <ul className="text-sm flex flex-col gap-2">
       {categories.map((cat: ICategories) => (
         <li
           key={cat.label}

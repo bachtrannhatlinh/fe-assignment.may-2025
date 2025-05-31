@@ -20,17 +20,23 @@ const WorkPackages = ({ workPackages }: { workPackages: IWorkPackage[] }) => {
             {wp.desc}
           </div>
           <div className="flex items-center gap-2 mb-2">
-            <button className="w-7 h-7 flex items-center justify-center rounded bg-[#e6f0f6] text-[#005B86]">
+            <Button
+              size="icon"
+              variant="ghost"
+              className="bg-[#E2F5F9] text-primary w-7 h-7"
+            >
               <ChevronRight className="w-4 h-4" />
-            </button>
-            <button className="w-7 h-7 flex items-center justify-center rounded bg-[#e6f0f6] text-[#005B86]">
+            </Button>
+            <Button
+              size="icon"
+              variant="ghost"
+              className="bg-[#E2F5F9] text-primary w-7 h-7"
+            >
               <ChevronRight className="w-4 h-4" />
-            </button>
+            </Button>
           </div>
           <div className="flex items-center justify-between">
-            <Button
-              variant="gray_F3F4F6"
-            >
+            <Button variant="gray_F3F4F6">
               View Detail
             </Button>
             <span className="inline-block">

@@ -78,4 +78,3 @@ export const IconLoadDocument = (props: { size: number }) => (
 export const IconChartLineUp = (props: { size: number }) => (
   <IconWrapper src={iconChartLineUp} {...props} />
 );
-
