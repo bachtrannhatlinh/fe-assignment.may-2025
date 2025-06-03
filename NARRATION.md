@@ -19,3 +19,18 @@
   - [ ] Allow filter by each columns values.
   - [ ] The current page & active filter must be saved to the state store and persist across page refreshes
 
+Hi, technical leader,
+
+I'm Linh, a candidate in the test FE assignment, May 2025.
+
+I write this mail to notify you that I've done this test.
+
+Need you to review it. Link to repo below :
+
+---> Link: https://github.com/bachtrannhatlinh/fe-assignment.may-2025
+
+If you have a question , please write a comment for me. 
+
+Thanks,
+
+LinhBTN
