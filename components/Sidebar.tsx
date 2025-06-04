@@ -1,20 +1,12 @@
 "use client";
 
 import React from "react";
-import {
-  IconAdministrations,
-  IconDocumentation,
-  IconEstimator,
-  IconInquiries,
-  IconLightMode,
-  IconLogo,
-  IconOverview,
-  IconProjects,
-  IconRiverFlow,
-  IconVector,
-} from "./Icons";
+import Image from "next/image";
+
 import { useSelector } from "react-redux";
 import { RootState } from "@/store";
+import { IconAdministrations, IconDocumentation, IconEstimator, IconInquiries, IconLightMode, IconOverview, IconProjects, IconRiverFlow } from "./Icons";
+import IconVector from "./Icons/icon-vector";
 
 type SidebarNavItem = {
   icon: React.ReactNode;
@@ -23,15 +15,15 @@ type SidebarNavItem = {
 };
 
 const mainNavItems: SidebarNavItem[] = [
-  { icon: <IconOverview size={18} />, label: "Overview" },
-  { icon: <IconInquiries size={18} />, label: "Inquiries" },
-  { icon: <IconEstimator size={18} />, label: "Estimator" },
-  { icon: <IconProjects size={18} />, label: "Projects", active: true },
+  { icon: <IconOverview />, label: "Overview" },
+  { icon: <IconInquiries />, label: "Inquiries" },
+  { icon: <IconEstimator />, label: "Estimator" },
+  { icon: <IconProjects />, label: "Projects", active: true },
 ];
 
 const bottomNavItems: SidebarNavItem[] = [
-  { icon: <IconAdministrations size={18} />, label: "Administrations" },
-  { icon: <IconDocumentation size={18} />, label: "Documentation" },
+  { icon: <IconAdministrations />, label: "Administrations" },
+  { icon: <IconDocumentation />, label: "Documentation" },
 ];
 
 function SidebarItem({
@@ -77,12 +69,10 @@ export default function Sidebar() {
       }`}
     >
       <div className={`flex px-4 mb-6 ${isOpen ? "" : "gap-2"}`}>
-        <IconLogo size={50} />
+        <Image src="/image/logo.png" alt="logo" width={50} height={50} />
         {!isOpen && (
           <div>
-            <div className="font-bold text-xl text-primary">
-              ABC Company
-            </div>
+            <div className="font-bold text-xl text-primary">ABC Company</div>
             <div className="text-base text-primary">Lisa Rose</div>
           </div>
         )}
@@ -114,11 +104,11 @@ export default function Sidebar() {
           </nav>
           <div className={`flex items-center gap-5 mt-4 mb-2 justify-center`}>
             {isOpen ? (
-              <IconRiverFlow size={32} />
+              <IconRiverFlow />
             ) : (
               <>
-                <IconLightMode size={134} />
-                <IconVector size={18} />
+                <IconLightMode />
+                <IconVector />
               </>
             )}
           </div>

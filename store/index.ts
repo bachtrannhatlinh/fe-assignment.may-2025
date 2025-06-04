@@ -12,12 +12,12 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+import storage from "redux-persist/lib/storage"; // sử dụng localStorage
 
 const rootReducer = combineReducers({
   toggle: toggleReducer,
   address: addressReducer,
-  customerTable: customerTableReducer
+  customerTable: customerTableReducer,
 });
 
 const persistConfig = {
@@ -36,6 +36,7 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
+  devTools: true,
 });
 
 export const persistor = persistStore(store);

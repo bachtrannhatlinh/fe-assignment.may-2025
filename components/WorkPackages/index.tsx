@@ -1,10 +1,10 @@
 import { IWorkPackage } from "@/types/work-packages";
 import React from "react";
 import { Button } from "../ui/button";
-import { IconCart } from "../Icons";
 import ChevronRight from "../Icons/icon-chevron-right";
 import { cn } from "@/lib/utils";
 import { borderGray, textGray600 } from "@/constant/color";
+import { IconCart } from "../Icons";
 
 const WorkPackages = ({ workPackages }: { workPackages: IWorkPackage[] }) => {
   return (
@@ -42,7 +42,7 @@ const WorkPackages = ({ workPackages }: { workPackages: IWorkPackage[] }) => {
               View Detail
             </Button>
             <span className="inline-block">
-              <IconCart size={20} />
+              <IconCart />
             </span>
           </div>
         </div>

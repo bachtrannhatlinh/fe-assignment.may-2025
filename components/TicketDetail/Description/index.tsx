@@ -1,8 +1,8 @@
-import { IconEBook } from "@/components/Icons";
 import React from "react";
 import Activity from "../Activity";
 import { textGray600 } from "@/constant/color";
 import { cn } from "@/lib/utils";
+import { IconEBook } from "@/components/Icons";
 
 const descriptionList = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -26,8 +26,8 @@ const Description = () => {
     <div className="flex-1 border-r border-solid border-[#D3D3D3] pr-4">
       <section className="flex flex-col gap-2">
         <div className="flex items-center gap-2 pb-2 mb-3 py-4 border-solid border-b border-[#D3D3D3]">
-          <IconEBook size={0} />
-          <span className={`${cn(textGray600)} !text-base`}>Description</span>
+          <IconEBook />
+          <span className={`${cn(textGray600)} !text-base !text-[#7C7C7C]`}>Description</span>
         </div>
         <ul className="customUl">
           {descriptionList.map((desc, idx) => (

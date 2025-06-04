@@ -66,7 +66,7 @@ const PropertiesSidebar = () => (
   <div className="w-80 bg-white border border-gray-200 rounded h-fit min-w-[260px]">
     <div className="flex items-center justify-between border-b border-solid border-[#D3D3D3] py-3 px-4">
       <div className="flex items-center gap-2">
-        <span className={`${cn(textGray600)} !text-base`}>Properties</span>
+        <span className={`${cn(textGray600)} !text-base !text-[#7C7C7C]`}>Properties</span>
         <IconChevronDown className="w-3 h-3 text-gray-500 cursor-pointer" />
       </div>
       <IconChevronRight className="w-5 h-5 text-gray-500 cursor-pointer" />

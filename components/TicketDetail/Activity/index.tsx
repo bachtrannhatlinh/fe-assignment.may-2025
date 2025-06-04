@@ -1,12 +1,12 @@
 import React from "react";
 
-import { IconEBook } from "@/components/Icons";
 import IconArrowLongUp from "@/components/Icons/icon-arrow-long-up";
 import IconClock from "@/components/Icons/icon-clock";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { textGray600 } from "@/constant/color";
 import { cn } from "@/lib/utils";
+import { IconEBook } from "@/components/Icons";
 
 type ActivityItemProps = {
   color: string;
@@ -16,22 +16,22 @@ type ActivityItemProps = {
 
 const activities: ActivityItemProps[] = [
   {
-    color: "bg-green-500",
+    color: "bg-[#22AD5C]",
     message: "RFX Phu Nguyen Submitted to underwriting",
     time: "2025-04-04 13:00:38",
   },
   {
-    color: "bg-blue-700",
+    color: "bg-[#005A86]",
     message: "ABC Trang Nguyen approval",
     time: "2025-04-04 11:10:38",
   },
   {
-    color: "bg-green-500",
+    color: "bg-[#22AD5C]",
     message: "RFX Phu Nguyen Submitted to underwriting",
     time: "2025-04-04 08:00:00",
   },
   {
-    color: "bg-blue-700",
+    color: "bg-[#005A86]",
     message: "ABC Trang Nguyen create an issue",
     time: "2025-04-03 17:10:38",
   },
@@ -50,8 +50,8 @@ const Activity = () => {
   return (
     <section className="mt-10">
       <div className="flex items-center gap-2 pb-2 mb-3 py-4 border-solid border-b border-[#D3D3D3]">
-        <IconEBook size={0} />
-        <span className={`${cn(textGray600)} !text-base`}>Activity</span>
+        <IconEBook />
+        <span className={`${cn(textGray600)} !text-base !text-[#7C7C7C]`}>Activity</span>
       </div>
       <ul className="activity-list space-y-1 mb-4 flex flex-col gap-3">
         {activities.map((item, idx) => (

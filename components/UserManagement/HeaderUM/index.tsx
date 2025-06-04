@@ -1,11 +1,5 @@
+import { IconBell, IconChevronDown, IconHome, IconSetting, IconUserCircle } from "@/components/Icons";
 import React from "react";
-import {
-  IconBell,
-  IconHome,
-  IconSetting,
-  IconUserCircle,
-} from "@/components/Icons";
-import IconChevronDown from "@/components/Icons/icon-chevron-down";
 
 const Logo = () => (
   <span className="text-green-400 font-bold text-xs tracking-wide">
@@ -34,14 +28,14 @@ const HeaderUM = () => (
     <div className="flex items-center gap-24">
       <Logo />
       <div className="flex items-center gap-">
-        <IconHome size={25} />
+        <IconHome />
         <ModuleInfo />
       </div>
     </div>
     <div className="flex items-center gap-3">
-      <IconBell size={22} />
-      <IconSetting size={30} />
-      <IconUserCircle size={30} />
+      <IconBell />
+      <IconSetting />
+      <IconUserCircle />
       <UserInfo />
       <IconChevronDown className="text-white h-5 w-5" />
     </div>

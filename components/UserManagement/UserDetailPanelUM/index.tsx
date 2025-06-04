@@ -7,13 +7,7 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
-import {
-  IconChartLineUp,
-  IconDocument,
-  IconGeneralInformation,
-  IconLoadDocument,
-  IconPercent,
-} from "../../Icons";
+
 import IconChevronRight from "../../Icons/icon-chevron-right";
 import ArrowTopRightOnSquare from "../../Icons/icon-arrow-top-right-on-square";
 import {
@@ -32,12 +26,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { IconChartLineUp, IconDocument, IconFiles, IconGeneralInformation, IconPercent } from "@/components/Icons";
 
 const UserDetailPanelUM = () => (
   <aside className="bg-white border-l overflow-auto text-[#234075] px-3">
     <div>
       <div className="flex items-center gap-2 text-xs text-[#767676] font-medium mb-3 py-2 border-solid border-b border-gray-200">
-        <IconGeneralInformation size={24} />
+        <IconGeneralInformation />
         <span>GENERAL INFORMATION</span>
       </div>
       <div className="flex flex-col gap-4 mb-4">
@@ -47,7 +42,7 @@ const UserDetailPanelUM = () => (
     </div>
 
     <CollappsePanel
-      icon1={<IconPercent size={24} />}
+      icon1={<IconPercent />}
       icon2={<IconChevronRight className="w-4 h-4" />}
       title="COMMISSION STRUCTURES"
       icon3={
@@ -69,7 +64,7 @@ const UserDetailPanelUM = () => (
       }
     />
     <CollappsePanel
-      icon1={<IconDocument size={24} />}
+      icon1={<IconDocument />}
       icon2={<IconChevronRight className="w-4 h-4" />}
       title="RECRUITMENT DOCUMENTS"
       icon3={
@@ -77,7 +72,7 @@ const UserDetailPanelUM = () => (
       }
     />
     <CollappsePanel
-      icon1={<IconLoadDocument size={24} />}
+      icon1={<IconFiles />}
       icon2={<IconChevronDown className="w-4 h-4" />}
       title="RELATED CLIENTS & LOAN DOCUMENTS"
     />
@@ -157,7 +152,7 @@ const UserDetailPanelUM = () => (
     </div>
 
     <CollappsePanel
-      icon1={<IconChartLineUp size={24} />}
+      icon1={<IconChartLineUp />}
       icon2={<IconChevronRight className="w-4 h-4" />}
       title="PERFORMANCE"
     />

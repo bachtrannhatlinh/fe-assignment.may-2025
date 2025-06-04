@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { RootState } from "@/store";
@@ -13,22 +13,30 @@ import {
   BreadcrumbSeparator,
   BreadcrumbLink,
 } from "@/components/ui/breadcrumb";
-import IconBars from "@/components/Icons/icon-bars";
 import { cn } from "@/lib/utils";
-import { borderGray, borderLightBlue } from "@/constant/color";
+import {  borderLightBlue } from "@/constant/color";
+import { IconViewSummary } from "@/components/Icons";
 
 const HeaderEs = () => {
-  const isOpen = useSelector((state: RootState) => state.toggle.open);
   const dispatch = useDispatch();
+
+  const handleClick = useCallback(
+    (e: React.MouseEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      dispatch(toggleSidebar());
+    },
+    [dispatch]
+  );
 
   return (
     <Header
       right={
         <Button
-          onClick={() => dispatch(toggleSidebar())}
-          className={`flex items-center gap-2 ${isOpen ? cn(borderLightBlue) : cn(borderGray)}`}
+          onClick={handleClick}
+          className={`flex items-center gap-2 ${cn(borderLightBlue)}`}
         >
-          <IconBars className="w-6 h-6" />
+          <IconViewSummary />
           View Summary
         </Button>
       }
